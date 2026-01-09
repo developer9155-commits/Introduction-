@@ -51,4 +51,3 @@ This portfolio represents my learning journey and projects.
 
 ---
 
-## 📂 Folder Structure
