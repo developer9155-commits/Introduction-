@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diploma Student Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #0f172a;
+            color: white;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #2563eb, #1e40af);
+            padding: 60px 20px;
+            text-align: center;
+            animation: slideDown 1.5s ease;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        nav {
+            background: #020617;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        section {
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: auto;
+            animation: fadeIn 2s ease;
+        }
+
+        h2 {
+            color: #38bdf8;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .skills, .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #020617;
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            background: #020617cc;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #020617;
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Murari Kumar</h1>
+    <p>Diploma Student | Computer Science Engineer</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am a Diploma student in Computer Science Engineering.  
+        I am passionate about web development, cloud computing, and learning new technologies.
+        I enjoy building projects and improving my technical skills.
+    </p>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+        <div class="card">HTML & CSS</div>
+        <div class="card">C Programming</div>
+        <div class="card">Linux Basics</div>
+        <div class="card">Git & GitHub</div>
+        <div class="card">Cloud Basics (AWS)</div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+        <div class="card">
+            <h3>Portfolio Website</h3>
+            <p>Personal responsive portfolio using HTML & CSS.</p>
+        </div>
+        <div class="card">
+            <h3>Linux Practice</h3>
+            <p>Hands-on practice with Linux commands and file systems.</p>
+        </div>
+        <div class="card">
+            <h3>Mini Web App</h3>
+            <p>Simple JavaScript-based application.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Email: murarikumarstm102@gmail.com</p>
+    <p>GitHub: github.com/developer9155-commits</p>
+    <p>Phone Number:9155129692</p>
+</section>
+
+<footer>
+    <p>© 2026 Diploma Student Portfolio</p>
+</footer>
+
+</body>
+</html>
